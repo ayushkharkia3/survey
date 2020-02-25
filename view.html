@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <style type="text/css">
+        h2 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+
+    }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>SURVEY</title>
+  </head>
+  <body style="background-color: black;">
+    <h1 style="text-align:center; color:ghostwhite; font-size:350%;" >
+        SURVEY
+    </h1>
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <div class="well well-lg">
+    <div class="container">
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Contact Number</span>
+            </div>
+            <input type="text" id="cNumber"  placeholder="Enter your Contact number here" aria-label="Enter your First name here" class="form-control" required>
+            </div>
+            <br>
+            <button type="button" class="btn btn-success btn-lg btn-block" onclick="viewData()" >SUBMIT</button><br>
+            <button type="button" class="btn btn-warning btn-lg btn-block" onclick="window.location.href='home.html'">HOME</button>
+        <br>
+        <br>
+    </div></div>   
+        <h2><div id="yName" style="color:ghostwhite"></div>
+        <div id="eMail" style="color:ghostwhite"></div>
+        <div id="contact" style="color:ghostwhite"></div>
+        <div id="q1" style="color:ghostwhite"></div>
+        <div id="q2" style="color:ghostwhite"></div>
+        <div id="q3" style="color:ghostwhite"></div></h2>
+
+        
+            
+        
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyD_gWHIQw86demIYKRN-Q-FrpYDw5dnvFs",
+      authDomain: "form20201.firebaseapp.com",
+      databaseURL: "https://form20201.firebaseio.com",
+      projectId: "form20201",
+      storageBucket: "form20201.appspot.com",
+      messagingSenderId: "470941909688",
+      appId: "1:470941909688:web:5ff6a4086f4d659a116a4d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
